@@ -40,7 +40,7 @@ const RecordsListingsTable = () => {
                       <div className="Records-block">
                         <div className="inner-box">
                           <div className="content">
-                            <span className="hospital-profile">
+                            <span className="patient-profile-pic">
                               <img src={item.logo} alt="logo" />
                             </span>
                             <h4>
