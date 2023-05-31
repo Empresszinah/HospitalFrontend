@@ -1,0 +1,66 @@
+module.exports = [
+  {
+    id: 1,
+    name: "Dashboard",
+    icon: "la-home",
+    routePath: "/dashboard/dashboard",
+    active: "active",
+  },
+  {
+    id: 2,
+    name: "My Profile",
+    icon: "la-user-tie",
+    routePath: "/dashboard/my-profile",
+    active: "",
+  },
+  {
+    id: 3,
+    name: "patients",
+    icon: "la-user-tie",
+    routePath: "/dashboard/patients",
+    active: "",
+  },
+  {
+    id: 4,
+    name: "pharmacy",
+    icon: "la-first-aid",
+    routePath: "/dashboard/pharmacy",
+    active: "",
+  },
+  {
+    id: 5,
+    name: "lab",
+    icon: "la-user-nurse",
+    routePath: "/dashboard/lab",
+    active: "",
+  },
+  {
+    id: 7,
+    name: "records",
+    icon: "la la-file-invoice",
+    routePath: "/dashboard/records",
+    active: "",
+  },
+ 
+  {
+    id: 9,
+    name: "Change Password",
+    icon: "la-lock",
+    routePath: "/dashboard/change-password",
+    active: "",
+  },
+  {
+    id: 10,
+    name: "Logout",
+    icon: "la-sign-out",
+    routePath: "/login",
+    active: "",
+  },
+  {
+    id: 11,
+    name: "Delete Profile",
+    icon: "la-trash",
+    routePath: "/",
+    active: "",
+  },
+];
