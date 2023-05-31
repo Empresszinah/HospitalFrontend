@@ -2,6 +2,18 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/login": "pages/login.js",
-  "/dashboard/dashboard": "pages/dashboard/dashboard.js"
+  "/404": "pages/404.html",
+  "/api/hello": "pages/api/hello.js",
+  "/dashboard/change-password": "pages/dashboard/change-password.html",
+  "/dashboard/dashboard": "pages/dashboard/dashboard.html",
+  "/dashboard/lab": "pages/dashboard/lab.html",
+  "/dashboard/my-profile": "pages/dashboard/my-profile.html",
+  "/dashboard/patients": "pages/dashboard/patients.html",
+  "/dashboard/pharmacy": "pages/dashboard/pharmacy.html",
+  "/dashboard/records": "pages/dashboard/records.html",
+  "/faq": "pages/faq.html",
+  "/": "pages/index.html",
+  "/invoice": "pages/invoice.html",
+  "/login": "pages/login.html",
+  "/register": "pages/register.html"
 }

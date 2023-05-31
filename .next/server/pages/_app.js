@@ -1,106 +1,321 @@
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/_app";
-exports.ids = ["pages/_app"];
+exports.id = 888;
+exports.ids = [888];
 exports.modules = {
 
-/***/ "./app/store.js":
-/*!**********************!*\
-  !*** ./app/store.js ***!
-  \**********************/
+/***/ 216:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"store\": () => (/* binding */ store)\n/* harmony export */ });\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @reduxjs/toolkit */ \"@reduxjs/toolkit\");\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _features_toggle_toggleSlice__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../features/toggle/toggleSlice */ \"./features/toggle/toggleSlice.js\");\n/* harmony import */ var _features_filter_filterSlice__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../features/filter/filterSlice */ \"./features/filter/filterSlice.js\");\n\n\n\nconst store = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__.configureStore)({\n    reducer: {\n        toggle: _features_toggle_toggleSlice__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n        filter: _features_filter_filterSlice__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n    },\n    middleware: (getDefaultMiddleware)=>getDefaultMiddleware().concat()\n});\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAvc3RvcmUuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBa0Q7QUFDTztBQUNBO0FBRWxELE1BQU1HLFFBQVFILGdFQUFjQSxDQUFDO0lBQ2hDSSxTQUFTO1FBRUxDLFFBQVFKLG9FQUFXQTtRQUNuQkssUUFBUUosb0VBQVdBO0lBQ3ZCO0lBQ0FLLFlBQVksQ0FBQ0MsdUJBQXlCQSx1QkFBdUJDLE1BQU07QUFDdkUsR0FBRyIsInNvdXJjZXMiOlsid2VicGFjazovL3N1cGVyaW8vLi9hcHAvc3RvcmUuanM/Y2FlNiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjb25maWd1cmVTdG9yZSB9IGZyb20gXCJAcmVkdXhqcy90b29sa2l0XCI7XHJcbmltcG9ydCB0b2dnbGVTbGljZSBmcm9tIFwiLi4vZmVhdHVyZXMvdG9nZ2xlL3RvZ2dsZVNsaWNlXCI7XHJcbmltcG9ydCBmaWx0ZXJTbGljZSBmcm9tIFwiLi4vZmVhdHVyZXMvZmlsdGVyL2ZpbHRlclNsaWNlXCI7XHJcblxyXG5leHBvcnQgY29uc3Qgc3RvcmUgPSBjb25maWd1cmVTdG9yZSh7XHJcbiAgICByZWR1Y2VyOiB7XHJcbiAgICBcclxuICAgICAgICB0b2dnbGU6IHRvZ2dsZVNsaWNlLFxyXG4gICAgICAgIGZpbHRlcjogZmlsdGVyU2xpY2UsXHJcbiAgICB9LFxyXG4gICAgbWlkZGxld2FyZTogKGdldERlZmF1bHRNaWRkbGV3YXJlKSA9PiBnZXREZWZhdWx0TWlkZGxld2FyZSgpLmNvbmNhdCgpLFxyXG59KTtcclxuIl0sIm5hbWVzIjpbImNvbmZpZ3VyZVN0b3JlIiwidG9nZ2xlU2xpY2UiLCJmaWx0ZXJTbGljZSIsInN0b3JlIiwicmVkdWNlciIsInRvZ2dsZSIsImZpbHRlciIsIm1pZGRsZXdhcmUiLCJnZXREZWZhdWx0TWlkZGxld2FyZSIsImNvbmNhdCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./app/store.js\n");
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "h": () => (/* binding */ store)
+});
+
+// EXTERNAL MODULE: external "@reduxjs/toolkit"
+var toolkit_ = __webpack_require__(5184);
+// EXTERNAL MODULE: ./features/toggle/toggleSlice.js
+var toggleSlice = __webpack_require__(2426);
+;// CONCATENATED MODULE: ./features/filter/filterSlice.js
+
+const initialState = {
+    jobList: {
+        keyword: "",
+        location: "",
+        destination: {
+            min: 0,
+            max: 100
+        },
+        category: "",
+        jobType: [],
+        jobTypeSelect: "",
+        datePosted: "",
+        experience: [],
+        experienceSelect: "",
+        salary: {
+            min: 0,
+            max: 20000
+        },
+        tag: ""
+    },
+    jobSort: {
+        sort: "",
+        perPage: {
+            start: 0,
+            end: 0
+        }
+    }
+};
+const filterSlice = (0,toolkit_.createSlice)({
+    name: "filter",
+    initialState,
+    reducers: {
+        addKeyword: (state, { payload  })=>{
+            state.jobList.keyword = payload;
+        },
+        addLocation: (state, { payload  })=>{
+            state.jobList.location = payload;
+        },
+        addDestination: (state, { payload  })=>{
+            state.jobList.destination.min = payload.min;
+            state.jobList.destination.max = payload.max;
+        },
+        addCategory: (state, { payload  })=>{
+            state.jobList.category = payload;
+        },
+        addJobType: (state, { payload  })=>{
+            const isExist = state.jobList.jobType.includes(payload);
+            if (!isExist) {
+                state.jobList.jobType.push(payload);
+            } else {
+                state.jobList.jobType = state.jobList.jobType.filter((item)=>item !== payload);
+            }
+        },
+        clearJobType: (state)=>{
+            state.jobList.jobType = [];
+        },
+        addJobTypeSelect: (state, { payload  })=>{
+            state.jobList.jobTypeSelect = payload;
+        },
+        addDatePosted: (state, { payload  })=>{
+            state.jobList.datePosted = payload;
+        },
+        addExperience: (state, { payload  })=>{
+            const isExist = state.jobList.experience.includes(payload);
+            if (!isExist) {
+                state.jobList.experience.push(payload);
+            } else {
+                state.jobList.experience = state.jobList.experience.filter((item)=>item !== payload);
+            }
+        },
+        addExperienceSelect: (state, { payload  })=>{
+            state.jobList.experienceSelect = payload;
+        },
+        clearExperience: (state)=>{
+            state.jobList.experience = [];
+        },
+        addSalary: (state, { payload  })=>{
+            state.jobList.salary.min = payload.min;
+            state.jobList.salary.max = payload.max;
+        },
+        addSort: (state, { payload  })=>{
+            state.jobSort.sort = payload;
+        },
+        addTag: (state, { payload  })=>{
+            state.jobList.tag = payload;
+        },
+        addPerPage: (state, { payload  })=>{
+            state.jobSort.perPage.start = payload.start;
+            state.jobSort.perPage.end = payload.end;
+        }
+    }
+});
+const { addKeyword , addLocation , addDestination , addCategory , addJobType , clearJobType , addJobTypeSelect , addDatePosted , addExperience , addExperienceSelect , clearExperience , addSalary , addTag , addSort , addPerPage  } = filterSlice.actions;
+/* harmony default export */ const filter_filterSlice = (filterSlice.reducer);
+
+;// CONCATENATED MODULE: ./app/store.js
+
+
+
+const store = (0,toolkit_.configureStore)({
+    reducer: {
+        toggle: toggleSlice/* default */.ZP,
+        filter: filter_filterSlice
+    },
+    middleware: (getDefaultMiddleware)=>getDefaultMiddleware().concat()
+});
+
 
 /***/ }),
 
-/***/ "./components/common/ScrollTop.jsx":
-/*!*****************************************!*\
-  !*** ./components/common/ScrollTop.jsx ***!
-  \*****************************************/
+/***/ 8937:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ScrollToTop)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction ScrollToTop() {\n    const [isVisible, setIsVisible] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    // Top: 0 takes us all the way back to the top of the page\n    // Behavior: smooth keeps it smooth!\n    const scrollToTop = ()=>{\n        window.scrollTo({\n            top: 0,\n            behavior: \"smooth\"\n        });\n    };\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        // Button is displayed after scrolling for 500 pixels\n        const toggleVisibility = ()=>{\n            if (window.pageYOffset > 500) {\n                setIsVisible(true);\n            } else {\n                setIsVisible(false);\n            }\n        };\n        window.addEventListener(\"scroll\", toggleVisibility);\n        return ()=>window.removeEventListener(\"scroll\", toggleVisibility);\n    }, []);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: isVisible && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"scroll-to-top scroll-to-target\",\n                onClick: scrollToTop,\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                    className: \"fa fa-angle-up\"\n                }, void 0, false, {\n                    fileName: \"/home/empresszee/My PROJECTS/StrydesHospitalProject/components/common/ScrollTop.jsx\",\n                    lineNumber: 35,\n                    columnNumber: 13\n                }, this)\n            }, void 0, false, {\n                fileName: \"/home/empresszee/My PROJECTS/StrydesHospitalProject/components/common/ScrollTop.jsx\",\n                lineNumber: 34,\n                columnNumber: 11\n            }, this)\n        }, void 0, false)\n    }, void 0, false);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL2NvbW1vbi9TY3JvbGxUb3AuanN4LmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQUE7QUFBNEM7QUFFN0IsU0FBU0UsY0FBYztJQUNwQyxNQUFNLENBQUNDLFdBQVdDLGFBQWEsR0FBR0gsK0NBQVFBLENBQUMsS0FBSztJQUVoRCwwREFBMEQ7SUFDMUQsb0NBQW9DO0lBQ3BDLE1BQU1JLGNBQWMsSUFBTTtRQUN4QkMsT0FBT0MsUUFBUSxDQUFDO1lBQ2RDLEtBQUs7WUFDTEMsVUFBVTtRQUNaO0lBQ0Y7SUFFQVQsZ0RBQVNBLENBQUMsSUFBTTtRQUNkLHFEQUFxRDtRQUNyRCxNQUFNVSxtQkFBbUIsSUFBTTtZQUM3QixJQUFJSixPQUFPSyxXQUFXLEdBQUcsS0FBSztnQkFDNUJQLGFBQWEsSUFBSTtZQUNuQixPQUFPO2dCQUNMQSxhQUFhLEtBQUs7WUFDcEIsQ0FBQztRQUNIO1FBRUFFLE9BQU9NLGdCQUFnQixDQUFDLFVBQVVGO1FBRWxDLE9BQU8sSUFBTUosT0FBT08sbUJBQW1CLENBQUMsVUFBVUg7SUFDcEQsR0FBRyxFQUFFO0lBRUwscUJBQ0U7a0JBQ0dQLDJCQUNDO3NCQUNFLDRFQUFDVztnQkFBSUMsV0FBVTtnQkFBaUNDLFNBQVNYOzBCQUN2RCw0RUFBQ1k7b0JBQUtGLFdBQVU7Ozs7Ozs7Ozs7Ozs7QUFNNUIsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3N1cGVyaW8vLi9jb21wb25lbnRzL2NvbW1vbi9TY3JvbGxUb3AuanN4PzcyZDEiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gXCJyZWFjdFwiO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gU2Nyb2xsVG9Ub3AoKSB7XHJcbiAgY29uc3QgW2lzVmlzaWJsZSwgc2V0SXNWaXNpYmxlXSA9IHVzZVN0YXRlKGZhbHNlKTtcclxuXHJcbiAgLy8gVG9wOiAwIHRha2VzIHVzIGFsbCB0aGUgd2F5IGJhY2sgdG8gdGhlIHRvcCBvZiB0aGUgcGFnZVxyXG4gIC8vIEJlaGF2aW9yOiBzbW9vdGgga2VlcHMgaXQgc21vb3RoIVxyXG4gIGNvbnN0IHNjcm9sbFRvVG9wID0gKCkgPT4ge1xyXG4gICAgd2luZG93LnNjcm9sbFRvKHtcclxuICAgICAgdG9wOiAwLFxyXG4gICAgICBiZWhhdmlvcjogXCJzbW9vdGhcIixcclxuICAgIH0pO1xyXG4gIH07XHJcblxyXG4gIHVzZUVmZmVjdCgoKSA9PiB7XHJcbiAgICAvLyBCdXR0b24gaXMgZGlzcGxheWVkIGFmdGVyIHNjcm9sbGluZyBmb3IgNTAwIHBpeGVsc1xyXG4gICAgY29uc3QgdG9nZ2xlVmlzaWJpbGl0eSA9ICgpID0+IHtcclxuICAgICAgaWYgKHdpbmRvdy5wYWdlWU9mZnNldCA+IDUwMCkge1xyXG4gICAgICAgIHNldElzVmlzaWJsZSh0cnVlKTtcclxuICAgICAgfSBlbHNlIHtcclxuICAgICAgICBzZXRJc1Zpc2libGUoZmFsc2UpO1xyXG4gICAgICB9XHJcbiAgICB9O1xyXG5cclxuICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKFwic2Nyb2xsXCIsIHRvZ2dsZVZpc2liaWxpdHkpO1xyXG5cclxuICAgIHJldHVybiAoKSA9PiB3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcihcInNjcm9sbFwiLCB0b2dnbGVWaXNpYmlsaXR5KTtcclxuICB9LCBbXSk7XHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8PlxyXG4gICAgICB7aXNWaXNpYmxlICYmIChcclxuICAgICAgICA8PlxyXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzY3JvbGwtdG8tdG9wIHNjcm9sbC10by10YXJnZXRcIiBvbkNsaWNrPXtzY3JvbGxUb1RvcH0+XHJcbiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImZhIGZhLWFuZ2xlLXVwXCI+PC9zcGFuPlxyXG4gICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgPC8+XHJcbiAgICAgICl9XHJcbiAgICA8Lz5cclxuICApO1xyXG59XHJcbiJdLCJuYW1lcyI6WyJ1c2VFZmZlY3QiLCJ1c2VTdGF0ZSIsIlNjcm9sbFRvVG9wIiwiaXNWaXNpYmxlIiwic2V0SXNWaXNpYmxlIiwic2Nyb2xsVG9Ub3AiLCJ3aW5kb3ciLCJzY3JvbGxUbyIsInRvcCIsImJlaGF2aW9yIiwidG9nZ2xlVmlzaWJpbGl0eSIsInBhZ2VZT2Zmc2V0IiwiYWRkRXZlbnRMaXN0ZW5lciIsInJlbW92ZUV2ZW50TGlzdGVuZXIiLCJkaXYiLCJjbGFzc05hbWUiLCJvbkNsaWNrIiwic3BhbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/common/ScrollTop.jsx\n");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ ScrollToTop)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function ScrollToTop() {
+    const [isVisible, setIsVisible] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    // Top: 0 takes us all the way back to the top of the page
+    // Behavior: smooth keeps it smooth!
+    const scrollToTop = ()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
+        // Button is displayed after scrolling for 500 pixels
+        const toggleVisibility = ()=>{
+            if (window.pageYOffset > 500) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+        window.addEventListener("scroll", toggleVisibility);
+        return ()=>window.removeEventListener("scroll", toggleVisibility);
+    }, []);
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: isVisible && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "scroll-to-top scroll-to-target",
+                onClick: scrollToTop,
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                    className: "fa fa-angle-up"
+                })
+            })
+        })
+    });
+}
+
 
 /***/ }),
 
-/***/ "./features/filter/filterSlice.js":
-/*!****************************************!*\
-  !*** ./features/filter/filterSlice.js ***!
-  \****************************************/
+/***/ 2426:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"addCategory\": () => (/* binding */ addCategory),\n/* harmony export */   \"addDatePosted\": () => (/* binding */ addDatePosted),\n/* harmony export */   \"addDestination\": () => (/* binding */ addDestination),\n/* harmony export */   \"addExperience\": () => (/* binding */ addExperience),\n/* harmony export */   \"addExperienceSelect\": () => (/* binding */ addExperienceSelect),\n/* harmony export */   \"addJobType\": () => (/* binding */ addJobType),\n/* harmony export */   \"addJobTypeSelect\": () => (/* binding */ addJobTypeSelect),\n/* harmony export */   \"addKeyword\": () => (/* binding */ addKeyword),\n/* harmony export */   \"addLocation\": () => (/* binding */ addLocation),\n/* harmony export */   \"addPerPage\": () => (/* binding */ addPerPage),\n/* harmony export */   \"addSalary\": () => (/* binding */ addSalary),\n/* harmony export */   \"addSort\": () => (/* binding */ addSort),\n/* harmony export */   \"addTag\": () => (/* binding */ addTag),\n/* harmony export */   \"clearExperience\": () => (/* binding */ clearExperience),\n/* harmony export */   \"clearJobType\": () => (/* binding */ clearJobType),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"filterSlice\": () => (/* binding */ filterSlice)\n/* harmony export */ });\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @reduxjs/toolkit */ \"@reduxjs/toolkit\");\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__);\n\nconst initialState = {\n    jobList: {\n        keyword: \"\",\n        location: \"\",\n        destination: {\n            min: 0,\n            max: 100\n        },\n        category: \"\",\n        jobType: [],\n        jobTypeSelect: \"\",\n        datePosted: \"\",\n        experience: [],\n        experienceSelect: \"\",\n        salary: {\n            min: 0,\n            max: 20000\n        },\n        tag: \"\"\n    },\n    jobSort: {\n        sort: \"\",\n        perPage: {\n            start: 0,\n            end: 0\n        }\n    }\n};\nconst filterSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__.createSlice)({\n    name: \"filter\",\n    initialState,\n    reducers: {\n        addKeyword: (state, { payload  })=>{\n            state.jobList.keyword = payload;\n        },\n        addLocation: (state, { payload  })=>{\n            state.jobList.location = payload;\n        },\n        addDestination: (state, { payload  })=>{\n            state.jobList.destination.min = payload.min;\n            state.jobList.destination.max = payload.max;\n        },\n        addCategory: (state, { payload  })=>{\n            state.jobList.category = payload;\n        },\n        addJobType: (state, { payload  })=>{\n            const isExist = state.jobList.jobType.includes(payload);\n            if (!isExist) {\n                state.jobList.jobType.push(payload);\n            } else {\n                state.jobList.jobType = state.jobList.jobType.filter((item)=>item !== payload);\n            }\n        },\n        clearJobType: (state)=>{\n            state.jobList.jobType = [];\n        },\n        addJobTypeSelect: (state, { payload  })=>{\n            state.jobList.jobTypeSelect = payload;\n        },\n        addDatePosted: (state, { payload  })=>{\n            state.jobList.datePosted = payload;\n        },\n        addExperience: (state, { payload  })=>{\n            const isExist = state.jobList.experience.includes(payload);\n            if (!isExist) {\n                state.jobList.experience.push(payload);\n            } else {\n                state.jobList.experience = state.jobList.experience.filter((item)=>item !== payload);\n            }\n        },\n        addExperienceSelect: (state, { payload  })=>{\n            state.jobList.experienceSelect = payload;\n        },\n        clearExperience: (state)=>{\n            state.jobList.experience = [];\n        },\n        addSalary: (state, { payload  })=>{\n            state.jobList.salary.min = payload.min;\n            state.jobList.salary.max = payload.max;\n        },\n        addSort: (state, { payload  })=>{\n            state.jobSort.sort = payload;\n        },\n        addTag: (state, { payload  })=>{\n            state.jobList.tag = payload;\n        },\n        addPerPage: (state, { payload  })=>{\n            state.jobSort.perPage.start = payload.start;\n            state.jobSort.perPage.end = payload.end;\n        }\n    }\n});\nconst { addKeyword , addLocation , addDestination , addCategory , addJobType , clearJobType , addJobTypeSelect , addDatePosted , addExperience , addExperienceSelect , clearExperience , addSalary , addTag , addSort , addPerPage  } = filterSlice.actions;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (filterSlice.reducer);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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ZS5qcz9mM2E5Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNyZWF0ZVNsaWNlIH0gZnJvbSBcIkByZWR1eGpzL3Rvb2xraXRcIjtcclxuXHJcbmNvbnN0IGluaXRpYWxTdGF0ZSA9IHtcclxuICAgIGpvYkxpc3Q6IHtcclxuICAgICAgICBrZXl3b3JkOiBcIlwiLFxyXG4gICAgICAgIGxvY2F0aW9uOiBcIlwiLFxyXG4gICAgICAgIGRlc3RpbmF0aW9uOiB7XHJcbiAgICAgICAgICAgIG1pbjogMCxcclxuICAgICAgICAgICAgbWF4OiAxMDAsXHJcbiAgICAgICAgfSxcclxuICAgICAgICBjYXRlZ29yeTogXCJcIixcclxuICAgICAgICBqb2JUeXBlOiBbXSxcclxuICAgICAgICBqb2JUeXBlU2VsZWN0OiBcIlwiLFxyXG4gICAgICAgIGRhdGVQb3N0ZWQ6IFwiXCIsXHJcbiAgICAgICAgZXhwZXJpZW5jZTogW10sXHJcbiAgICAgICAgZXhwZXJpZW5jZVNlbGVjdDogXCJcIixcclxuICAgICAgICBzYWxhcnk6IHtcclxuICAgICAgICAgICAgbWluOiAwLFxyXG4gICAgICAgICAgICBtYXg6IDIwMDAwLFxyXG4gICAgICAgIH0sXHJcbiAgICAgICAgdGFnOiBcIlwiLFxyXG4gICAgfSxcclxuICAgIGpvYlNvcnQ6IHtcclxuICAgICAgICBzb3J0OiBcIlwiLFxyXG4gICAgICAgIHBlclBhZ2U6IHtcclxuICAgICAgICAgICAgc3RhcnQ6IDAsXHJcbiAgICAgICAgICAgIGVuZDogMCxcclxuICAgICAgICB9LFxyXG4gICAgfSxcclxufTtcclxuXHJcbmV4cG9ydCBjb25zdCBmaWx0ZXJTbGljZSA9IGNyZWF0ZVNsaWNlKHtcclxuICAgIG5hbWU6IFwiZmlsdGVyXCIsXHJcbiAgICBpbml0aWFsU3RhdGUsXHJcbiAgICByZWR1Y2Vyczoge1xyXG4gICAgICAgIGFkZEtleXdvcmQ6IChzdGF0ZSwgeyBwYXlsb2FkIH0pID0+IHtcclxuICAgICAgICAgICAgc3RhdGUuam9iTGlzdC5rZXl3b3JkID0gcGF5bG9hZDtcclxuICAgICAgICB9LFxyXG4gICAgICAgIGFkZExvY2F0aW9uOiAoc3RhdGUsIHsgcGF5bG9hZCB9KSA9PiB7XHJcbiAgICAgICAgICAgIHN0YXRlLmpvYkxpc3QubG9jYXRpb24gPSBwYXlsb2FkO1xyXG4gICAgICAgIH0sXHJcbiAgICAgICAgYWRkRGVzdGluYXRpb246IChzdGF0ZSwgeyBwYXlsb2FkIH0pID0+IHtcclxuICAgICAgICAgICAgc3RhdGUuam9iTGlzdC5kZXN0aW5hdGlvbi5taW4gPSBwYXlsb2FkLm1pbjtcclxuICAgICAgICAgICAgc3RhdGUuam9iTGlzdC5kZXN0aW5hdGlvbi5tYXggPSBwYXlsb2FkLm1heDtcclxuICAgICAgICB9LFxyXG4gICAgICAgIGFkZENhdGVnb3J5OiAoc3RhdGUsIHsgcGF5bG9hZCB9KSA9PiB7XHJcbiAgICAgICAgICAgIHN0YXRlLmpvYkxpc3QuY2F0ZWdvcnkgPSBwYXlsb2FkO1xyXG4gICAgICAgIH0sXHJcbiAgICAgICAgYWRkSm9iVHlwZTogKHN0YXRlLCB7IHBheWxvYWQgfSkgPT4ge1xyXG4gICAgICAgICAgICBjb25zdCBpc0V4aXN0ID0gc3RhdGUuam9iTGlzdC5qb2JUeXBlLmluY2x1ZGVzKHBheWxvYWQpO1xyXG4gICAgICAgICAgICBpZiAoIWlzRXhpc3QpIHtcclxuICAgICAgICAgICAgICAgIHN0YXRlLmpvYkxpc3Quam9iVHlwZS5wdXNoKHBheWxvYWQpO1xyXG4gICAgICAgICAgICB9IGVsc2Uge1xyXG4gICAgICAgICAgICAgICAgc3RhdGUuam9iTGlzdC5qb2JUeXBlID0gc3RhdGUuam9iTGlzdC5qb2JUeXBlLmZpbHRlcihcclxuICAgICAgICAgICAgICAgICAgICAoaXRlbSkgPT4gaXRlbSAhPT0gcGF5bG9hZFxyXG4gICAgICAgICAgICAgICAgKTtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH0sXHJcbiAgICAgICAgY2xlYXJKb2JUeXBlOiAoc3RhdGUpID0+IHtcclxuICAgICAgICAgICAgc3RhdGUuam9iTGlzdC5qb2JUeXBlID0gW107XHJcbiAgICAgICAgfSxcclxuICAgICAgICBhZGRKb2JUeXBlU2VsZWN0OiAoc3RhdGUsIHsgcGF5bG9hZCB9KSA9PiB7XHJcbiAgICAgICAgICAgIHN0YXRlLmpvYkxpc3Quam9iVHlwZVNlbGVjdCA9IHBheWxvYWQ7XHJcbiAgICAgICAgfSxcclxuICAgICAgICBhZGREYXRlUG9zdGVkOiAoc3RhdGUsIHsgcGF5bG9hZCB9KSA9PiB7XHJcbiAgICAgICAgICAgIHN0YXRlLmpvYkxpc3QuZGF0ZVBvc3RlZCA9IHBheWxvYWQ7XHJcbiAgICAgICAgfSxcclxuICAgICAgICBhZGRFeHBlcmllbmNlOiAoc3RhdGUsIHsgcGF5bG9hZCB9KSA9PiB7XHJcbiAgICAgICAgICAgIGNvbnN0IGlzRXhpc3QgPSBzdGF0ZS5qb2JMaXN0LmV4cGVyaWVuY2UuaW5jbHVkZXMocGF5bG9hZCk7XHJcbiAgICAgICAgICAgIGlmICghaXNFeGlzdCkge1xyXG4gICAgICAgICAgICAgICAgc3RhdGUuam9iTGlzdC5leHBlcmllbmNlLnB1c2gocGF5bG9hZCk7XHJcbiAgICAgICAgICAgIH0gZWxzZSB7XHJcbiAgICAgICAgICAgICAgICBzdGF0ZS5qb2JMaXN0LmV4cGVyaWVuY2UgPSBzdGF0ZS5qb2JMaXN0LmV4cGVyaWVuY2UuZmlsdGVyKFxyXG4gICAgICAgICAgICAgICAgICAgIChpdGVtKSA9PiBpdGVtICE9PSBwYXlsb2FkXHJcbiAgICAgICAgICAgICAgICApO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfSxcclxuICAgICAgICBhZGRFeHBlcmllbmNlU2VsZWN0OiAoc3RhdGUsIHsgcGF5bG9hZCB9KSA9PiB7XHJcbiAgICAgICAgICAgIHN0YXRlLmpvYkxpc3QuZXhwZXJpZW5jZVNlbGVjdCA9IHBheWxvYWQ7XHJcbiAgICAgICAgfSxcclxuICAgICAgICBjbGVhckV4cGVyaWVuY2U6IChzdGF0ZSkgPT4ge1xyXG4gICAgICAgICAgICBzdGF0ZS5qb2JMaXN0LmV4cGVyaWVuY2UgPSBbXTtcclxuICAgICAgICB9LFxyXG4gICAgICAgIGFkZFNhbGFyeTogKHN0YXRlLCB7IHBheWxvYWQgfSkgPT4ge1xyXG4gICAgICAgICAgICBzdGF0ZS5qb2JMaXN0LnNhbGFyeS5taW4gPSBwYXlsb2FkLm1pbjtcclxuICAgICAgICAgICAgc3RhdGUuam9iTGlzdC5zYWxhcnkubWF4ID0gcGF5bG9hZC5tYXg7XHJcbiAgICAgICAgfSxcclxuICAgICAgICBhZGRTb3J0OiAoc3RhdGUsIHsgcGF5bG9hZCB9KSA9PiB7XHJcbiAgICAgICAgICAgIHN0YXRlLmpvYlNvcnQuc29ydCA9IHBheWxvYWQ7XHJcbiAgICAgICAgfSxcclxuICAgICAgICBhZGRUYWc6IChzdGF0ZSwgeyBwYXlsb2FkIH0pID0+IHtcclxuICAgICAgICAgICAgc3RhdGUuam9iTGlzdC50YWcgPSBwYXlsb2FkO1xyXG4gICAgICAgIH0sXHJcbiAgICAgICAgYWRkUGVyUGFnZTogKHN0YXRlLCB7IHBheWxvYWQgfSkgPT4ge1xyXG4gICAgICAgICAgICBzdGF0ZS5qb2JTb3J0LnBlclBhZ2Uuc3RhcnQgPSBwYXlsb2FkLnN0YXJ0O1xyXG4gICAgICAgICAgICBzdGF0ZS5qb2JTb3J0LnBlclBhZ2UuZW5kID0gcGF5bG9hZC5lbmQ7XHJcbiAgICAgICAgfSxcclxuICAgIH0sXHJcbn0pO1xyXG5cclxuZXhwb3J0IGNvbnN0IHtcclxuICAgIGFkZEtleXdvcmQsXHJcbiAgICBhZGRMb2NhdGlvbixcclxuICAgIGFkZERlc3RpbmF0aW9uLFxyXG4gICAgYWRkQ2F0ZWdvcnksXHJcbiAgICBhZGRKb2JUeXBlLFxyXG4gICAgY2xlYXJKb2JUeXBlLFxyXG4gICAgYWRkSm9iVHlwZVNlbGVjdCxcclxuICAgIGFkZERhdGVQb3N0ZWQsXHJcbiAgICBhZGRFeHBlcmllbmNlLFxyXG4gICAgYWRkRXhwZXJpZW5jZVNlbGVjdCxcclxuICAgIGNsZWFyRXhwZXJpZW5jZSxcclxuICAgIGFkZFNhbGFyeSxcclxuICAgIGFkZFRhZyxcclxuICAgIGFkZFNvcnQsXHJcbiAgICBhZGRQZXJQYWdlLFxyXG59ID0gZmlsdGVyU2xpY2UuYWN0aW9ucztcclxuZXhwb3J0IGRlZmF1bHQgZmlsdGVyU2xpY2UucmVkdWNlcjtcclxuIl0sIm5hbWVzIjpbImNyZWF0ZVNsaWNlIiwiaW5pdGlhbFN0YXRlIiwiam9iTGlzdCIsImtleXdvcmQiLCJsb2NhdGlvbiIsImRlc3RpbmF0aW9uIiwibWluIiwibWF4IiwiY2F0ZWdvcnkiLCJqb2JUeXBlIiwiam9iVHlwZVNlbGVjdCIsImRhdGVQb3N0ZWQiLCJleHBlcmllbmNlIiwiZXhwZXJpZW5jZVNlbGVjdCIsInNhbGFyeSIsInRhZyIsImpvYlNvcnQiLCJzb3J0IiwicGVyUGFnZSIsInN0YXJ0IiwiZW5kIiwiZmlsdGVyU2xpY2UiLCJuYW1lIiwicmVkdWNlcnMiLCJhZGRLZXl3b3JkIiwic3RhdGUiLCJwYXlsb2FkIiwiYWRkTG9jYXRpb24iLCJhZGREZXN0aW5hdGlvbiIsImFkZENhdGVnb3J5IiwiYWRkSm9iVHlwZSIsImlzRXhpc3QiLCJpbmNsdWRlcyIsInB1c2giLCJmaWx0ZXIiLCJpdGVtIiwiY2xlYXJKb2JUeXBlIiwiYWRkSm9iVHlwZVNlbGVjdCIsImFkZERhdGVQb3N0ZWQiLCJhZGRFeHBlcmllbmNlIiwiYWRkRXhwZXJpZW5jZVNlbGVjdCIsImNsZWFyRXhwZXJpZW5jZSIsImFkZFNhbGFyeSIsImFkZFNvcnQiLCJhZGRUYWciLCJhZGRQZXJQYWdlIiwiYWN0aW9ucyIsInJlZHVjZXIiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./features/filter/filterSlice.js\n");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ZP": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "u": () => (/* binding */ menuToggle)
+/* harmony export */ });
+/* unused harmony exports toggleSlice, chatSidebarToggle */
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5184);
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__);
+
+const initialState = {
+    menu: false,
+    chatSidebar: false
+};
+const toggleSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__.createSlice)({
+    name: "toggle",
+    initialState,
+    reducers: {
+        menuToggle: (state)=>{
+            state.menu = !state.menu;
+        },
+        chatSidebarToggle: (state)=>{
+            state.chatSidebar = !state.chatSidebar;
+        }
+    }
+});
+const { menuToggle , chatSidebarToggle  } = toggleSlice.actions;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toggleSlice.reducer);
+
 
 /***/ }),
 
-/***/ "./features/toggle/toggleSlice.js":
-/*!****************************************!*\
-  !*** ./features/toggle/toggleSlice.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"chatSidebarToggle\": () => (/* binding */ chatSidebarToggle),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"menuToggle\": () => (/* binding */ menuToggle),\n/* harmony export */   \"toggleSlice\": () => (/* binding */ toggleSlice)\n/* harmony export */ });\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @reduxjs/toolkit */ \"@reduxjs/toolkit\");\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__);\n\nconst initialState = {\n    menu: false,\n    chatSidebar: false\n};\nconst toggleSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__.createSlice)({\n    name: \"toggle\",\n    initialState,\n    reducers: {\n        menuToggle: (state)=>{\n            state.menu = !state.menu;\n        },\n        chatSidebarToggle: (state)=>{\n            state.chatSidebar = !state.chatSidebar;\n        }\n    }\n});\nconst { menuToggle , chatSidebarToggle  } = toggleSlice.actions;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toggleSlice.reducer);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9mZWF0dXJlcy90b2dnbGUvdG9nZ2xlU2xpY2UuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQStDO0FBRS9DLE1BQU1DLGVBQWU7SUFDakJDLE1BQU0sS0FBSztJQUNYQyxhQUFhLEtBQUs7QUFDdEI7QUFFTyxNQUFNQyxjQUFjSiw2REFBV0EsQ0FBQztJQUNuQ0ssTUFBTTtJQUNOSjtJQUNBSyxVQUFVO1FBQ05DLFlBQVksQ0FBQ0MsUUFBVTtZQUNuQkEsTUFBTU4sSUFBSSxHQUFHLENBQUNNLE1BQU1OLElBQUk7UUFDNUI7UUFDQU8sbUJBQW1CLENBQUNELFFBQVU7WUFDMUJBLE1BQU1MLFdBQVcsR0FBRyxDQUFDSyxNQUFNTCxXQUFXO1FBQzFDO0lBQ0o7QUFDSixHQUFHO0FBRUksTUFBTSxFQUFFSSxXQUFVLEVBQUVFLGtCQUFpQixFQUFFLEdBQUdMLFlBQVlNLE9BQU8sQ0FBQztBQUNyRSxpRUFBZU4sWUFBWU8sT0FBTyxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vc3VwZXJpby8uL2ZlYXR1cmVzL3RvZ2dsZS90b2dnbGVTbGljZS5qcz9hN2M0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNyZWF0ZVNsaWNlIH0gZnJvbSBcIkByZWR1eGpzL3Rvb2xraXRcIjtcclxuXHJcbmNvbnN0IGluaXRpYWxTdGF0ZSA9IHtcclxuICAgIG1lbnU6IGZhbHNlLFxyXG4gICAgY2hhdFNpZGViYXI6IGZhbHNlLFxyXG59O1xyXG5cclxuZXhwb3J0IGNvbnN0IHRvZ2dsZVNsaWNlID0gY3JlYXRlU2xpY2Uoe1xyXG4gICAgbmFtZTogXCJ0b2dnbGVcIixcclxuICAgIGluaXRpYWxTdGF0ZSxcclxuICAgIHJlZHVjZXJzOiB7XHJcbiAgICAgICAgbWVudVRvZ2dsZTogKHN0YXRlKSA9PiB7XHJcbiAgICAgICAgICAgIHN0YXRlLm1lbnUgPSAhc3RhdGUubWVudTtcclxuICAgICAgICB9LFxyXG4gICAgICAgIGNoYXRTaWRlYmFyVG9nZ2xlOiAoc3RhdGUpID0+IHtcclxuICAgICAgICAgICAgc3RhdGUuY2hhdFNpZGViYXIgPSAhc3RhdGUuY2hhdFNpZGViYXI7XHJcbiAgICAgICAgfSxcclxuICAgIH0sXHJcbn0pO1xyXG5cclxuZXhwb3J0IGNvbnN0IHsgbWVudVRvZ2dsZSwgY2hhdFNpZGViYXJUb2dnbGUgfSA9IHRvZ2dsZVNsaWNlLmFjdGlvbnM7XHJcbmV4cG9ydCBkZWZhdWx0IHRvZ2dsZVNsaWNlLnJlZHVjZXI7XHJcbiJdLCJuYW1lcyI6WyJjcmVhdGVTbGljZSIsImluaXRpYWxTdGF0ZSIsIm1lbnUiLCJjaGF0U2lkZWJhciIsInRvZ2dsZVNsaWNlIiwibmFtZSIsInJlZHVjZXJzIiwibWVudVRvZ2dsZSIsInN0YXRlIiwiY2hhdFNpZGViYXJUb2dnbGUiLCJhY3Rpb25zIiwicmVkdWNlciJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./features/toggle/toggleSlice.js\n");
-
-/***/ }),
-
-/***/ "./pages/_app.js":
-/*!***********************!*\
-  !*** ./pages/_app.js ***!
-  \***********************/
+/***/ 8484:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! aos */ \"aos\");\n/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! aos/dist/aos.css */ \"./node_modules/aos/dist/aos.css\");\n/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/index.scss */ \"./styles/index.scss\");\n/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_index_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _components_common_ScrollTop__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/common/ScrollTop */ \"./components/common/ScrollTop.jsx\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-redux */ \"react-redux\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _app_store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../app/store */ \"./app/store.js\");\n/* harmony import */ var react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-toastify/dist/ReactToastify.css */ \"./node_modules/react-toastify/dist/ReactToastify.css\");\n/* harmony import */ var react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-toastify */ \"react-toastify\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_toastify__WEBPACK_IMPORTED_MODULE_9__]);\nreact_toastify__WEBPACK_IMPORTED_MODULE_9__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n\n\n\n\n\n\n\nif (false) {}\nfunction MyApp({ Component , pageProps  }) {\n    // aos animation activation\n    (0,react__WEBPACK_IMPORTED_MODULE_4__.useEffect)(()=>{\n        aos__WEBPACK_IMPORTED_MODULE_1___default().init({\n            duration: 1400,\n            once: true\n        });\n    }, []);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_redux__WEBPACK_IMPORTED_MODULE_6__.Provider, {\n        store: _app_store__WEBPACK_IMPORTED_MODULE_7__.store,\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"page-wrapper\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n                    ...pageProps\n                }, void 0, false, {\n                    fileName: \"/home/empresszee/My PROJECTS/StrydesHospitalProject/pages/_app.js\",\n                    lineNumber: 28,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_toastify__WEBPACK_IMPORTED_MODULE_9__.ToastContainer, {\n                    position: \"bottom-right\",\n                    autoClose: 500,\n                    hideProgressBar: false,\n                    newestOnTop: false,\n                    closeOnClick: true,\n                    rtl: false,\n                    pauseOnFocusLoss: true,\n                    draggable: true,\n                    pauseOnHover: true,\n                    theme: \"colored\"\n                }, void 0, false, {\n                    fileName: \"/home/empresszee/My PROJECTS/StrydesHospitalProject/pages/_app.js\",\n                    lineNumber: 31,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_common_ScrollTop__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {}, void 0, false, {\n                    fileName: \"/home/empresszee/My PROJECTS/StrydesHospitalProject/pages/_app.js\",\n                    lineNumber: 44,\n                    columnNumber: 9\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"/home/empresszee/My PROJECTS/StrydesHospitalProject/pages/_app.js\",\n            lineNumber: 27,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"/home/empresszee/My PROJECTS/StrydesHospitalProject/pages/_app.js\",\n        lineNumber: 26,\n        columnNumber: 5\n    }, this);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyApp);\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0FBQXNCO0FBQ0k7QUFDSTtBQUNJO0FBQ3VCO0FBQ2xCO0FBQ0Y7QUFDVTtBQUNDO0FBRWhELElBQUksS0FBNkIsRUFBRSxFQUVsQztBQUVELFNBQVNPLE1BQU0sRUFBRUMsVUFBUyxFQUFFQyxVQUFTLEVBQUUsRUFBRTtJQUN2QywyQkFBMkI7SUFFM0JSLGdEQUFTQSxDQUFDLElBQU07UUFDZEQsK0NBQVEsQ0FBQztZQUNQVyxVQUFVO1lBQ1ZDLE1BQU0sSUFBSTtRQUNaO0lBQ0YsR0FBRyxFQUFFO0lBRUwscUJBQ0UsOERBQUNULGlEQUFRQTtRQUFDQyxPQUFPQSw2Q0FBS0E7a0JBQ3BCLDRFQUFDUztZQUFJQyxXQUFVOzs4QkFDYiw4REFBQ047b0JBQVcsR0FBR0MsU0FBUzs7Ozs7OzhCQUd4Qiw4REFBQ0osMERBQWNBO29CQUNiVSxVQUFTO29CQUNUQyxXQUFXO29CQUNYQyxpQkFBaUIsS0FBSztvQkFDdEJDLGFBQWEsS0FBSztvQkFDbEJDLFlBQVk7b0JBQ1pDLEtBQUssS0FBSztvQkFDVkMsZ0JBQWdCO29CQUNoQkMsU0FBUztvQkFDVEMsWUFBWTtvQkFDWkMsT0FBTTs7Ozs7OzhCQUdSLDhEQUFDdEIsb0VBQVdBOzs7Ozs7Ozs7Ozs7Ozs7O0FBSXBCO0FBRUEsaUVBQWVLLEtBQUtBLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zdXBlcmlvLy4vcGFnZXMvX2FwcC5qcz9lMGFkIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBBb3MgZnJvbSBcImFvc1wiO1xyXG5pbXBvcnQgXCJhb3MvZGlzdC9hb3MuY3NzXCI7XHJcbmltcG9ydCBcIi4uL3N0eWxlcy9pbmRleC5zY3NzXCI7XHJcbmltcG9ydCB7IHVzZUVmZmVjdCB9IGZyb20gXCJyZWFjdFwiO1xyXG5pbXBvcnQgU2Nyb2xsVG9Ub3AgZnJvbSBcIi4uL2NvbXBvbmVudHMvY29tbW9uL1Njcm9sbFRvcFwiO1xyXG5pbXBvcnQgeyBQcm92aWRlciB9IGZyb20gXCJyZWFjdC1yZWR1eFwiO1xyXG5pbXBvcnQgeyBzdG9yZSB9IGZyb20gXCIuLi9hcHAvc3RvcmVcIjtcclxuaW1wb3J0IFwicmVhY3QtdG9hc3RpZnkvZGlzdC9SZWFjdFRvYXN0aWZ5LmNzc1wiO1xyXG5pbXBvcnQgeyBUb2FzdENvbnRhaW5lciB9IGZyb20gXCJyZWFjdC10b2FzdGlmeVwiO1xyXG5cclxuaWYgKHR5cGVvZiB3aW5kb3cgIT09IFwidW5kZWZpbmVkXCIpIHtcclxuICByZXF1aXJlKFwiYm9vdHN0cmFwL2Rpc3QvanMvYm9vdHN0cmFwXCIpO1xyXG59XHJcblxyXG5mdW5jdGlvbiBNeUFwcCh7IENvbXBvbmVudCwgcGFnZVByb3BzIH0pIHtcclxuICAvLyBhb3MgYW5pbWF0aW9uIGFjdGl2YXRpb25cclxuXHJcbiAgdXNlRWZmZWN0KCgpID0+IHtcclxuICAgIEFvcy5pbml0KHtcclxuICAgICAgZHVyYXRpb246IDE0MDAsXHJcbiAgICAgIG9uY2U6IHRydWUsXHJcbiAgICB9KTtcclxuICB9LCBbXSk7XHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8UHJvdmlkZXIgc3RvcmU9e3N0b3JlfT5cclxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYWdlLXdyYXBwZXJcIj5cclxuICAgICAgICA8Q29tcG9uZW50IHsuLi5wYWdlUHJvcHN9IC8+XHJcblxyXG4gICAgICAgIHsvKiBUb2FzdGlmeSAqL31cclxuICAgICAgICA8VG9hc3RDb250YWluZXJcclxuICAgICAgICAgIHBvc2l0aW9uPVwiYm90dG9tLXJpZ2h0XCJcclxuICAgICAgICAgIGF1dG9DbG9zZT17NTAwfVxyXG4gICAgICAgICAgaGlkZVByb2dyZXNzQmFyPXtmYWxzZX1cclxuICAgICAgICAgIG5ld2VzdE9uVG9wPXtmYWxzZX1cclxuICAgICAgICAgIGNsb3NlT25DbGlja1xyXG4gICAgICAgICAgcnRsPXtmYWxzZX1cclxuICAgICAgICAgIHBhdXNlT25Gb2N1c0xvc3NcclxuICAgICAgICAgIGRyYWdnYWJsZVxyXG4gICAgICAgICAgcGF1c2VPbkhvdmVyXHJcbiAgICAgICAgICB0aGVtZT1cImNvbG9yZWRcIlxyXG4gICAgICAgIC8+XHJcbiAgICAgICAgey8qIDwhLS0gU2Nyb2xsIFRvIFRvcCAtLT4gKi99XHJcbiAgICAgICAgPFNjcm9sbFRvVG9wIC8+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9Qcm92aWRlcj5cclxuICApO1xyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBNeUFwcDtcclxuIl0sIm5hbWVzIjpbIkFvcyIsInVzZUVmZmVjdCIsIlNjcm9sbFRvVG9wIiwiUHJvdmlkZXIiLCJzdG9yZSIsIlRvYXN0Q29udGFpbmVyIiwicmVxdWlyZSIsIk15QXBwIiwiQ29tcG9uZW50IiwicGFnZVByb3BzIiwiaW5pdCIsImR1cmF0aW9uIiwib25jZSIsImRpdiIsImNsYXNzTmFtZSIsInBvc2l0aW9uIiwiYXV0b0Nsb3NlIiwiaGlkZVByb2dyZXNzQmFyIiwibmV3ZXN0T25Ub3AiLCJjbG9zZU9uQ2xpY2siLCJydGwiLCJwYXVzZU9uRm9jdXNMb3NzIiwiZHJhZ2dhYmxlIiwicGF1c2VPbkhvdmVyIiwidGhlbWUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/_app.js\n");
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9783);
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1759);
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1663);
+/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_index_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_common_ScrollTop__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8937);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6022);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _app_store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(216);
+/* harmony import */ var react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(8819);
+/* harmony import */ var react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(3590);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_toastify__WEBPACK_IMPORTED_MODULE_9__]);
+react_toastify__WEBPACK_IMPORTED_MODULE_9__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+
+
+
+
+
+
+
+
+
+if (false) {}
+function MyApp({ Component , pageProps  }) {
+    // aos animation activation
+    (0,react__WEBPACK_IMPORTED_MODULE_4__.useEffect)(()=>{
+        aos__WEBPACK_IMPORTED_MODULE_1___default().init({
+            duration: 1400,
+            once: true
+        });
+    }, []);
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_redux__WEBPACK_IMPORTED_MODULE_6__.Provider, {
+        store: _app_store__WEBPACK_IMPORTED_MODULE_7__/* .store */ .h,
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "page-wrapper",
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
+                    ...pageProps
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_toastify__WEBPACK_IMPORTED_MODULE_9__.ToastContainer, {
+                    position: "bottom-right",
+                    autoClose: 500,
+                    hideProgressBar: false,
+                    newestOnTop: false,
+                    closeOnClick: true,
+                    rtl: false,
+                    pauseOnFocusLoss: true,
+                    draggable: true,
+                    pauseOnHover: true,
+                    theme: "colored"
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_common_ScrollTop__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {})
+            ]
+        })
+    });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyApp);
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
-/***/ "./node_modules/aos/dist/aos.css":
-/*!***************************************!*\
-  !*** ./node_modules/aos/dist/aos.css ***!
-  \***************************************/
+/***/ 1759:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./node_modules/react-toastify/dist/ReactToastify.css":
-/*!************************************************************!*\
-  !*** ./node_modules/react-toastify/dist/ReactToastify.css ***!
-  \************************************************************/
+/***/ 8819:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "./styles/index.scss":
-/*!***************************!*\
-  !*** ./styles/index.scss ***!
-  \***************************/
+/***/ 1663:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ "@reduxjs/toolkit":
-/*!***********************************!*\
-  !*** external "@reduxjs/toolkit" ***!
-  \***********************************/
+/***/ 5184:
 /***/ ((module) => {
 
 "use strict";
@@ -108,10 +323,7 @@ module.exports = require("@reduxjs/toolkit");
 
 /***/ }),
 
-/***/ "aos":
-/*!**********************!*\
-  !*** external "aos" ***!
-  \**********************/
+/***/ 9783:
 /***/ ((module) => {
 
 "use strict";
@@ -119,10 +331,7 @@ module.exports = require("aos");
 
 /***/ }),
 
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
+/***/ 6689:
 /***/ ((module) => {
 
 "use strict";
@@ -130,10 +339,7 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-redux":
-/*!******************************!*\
-  !*** external "react-redux" ***!
-  \******************************/
+/***/ 6022:
 /***/ ((module) => {
 
 "use strict";
@@ -141,21 +347,15 @@ module.exports = require("react-redux");
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 997:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("react/jsx-dev-runtime");
+module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
-/***/ "react-toastify":
-/*!*********************************!*\
-  !*** external "react-toastify" ***!
-  \*********************************/
+/***/ 3590:
 /***/ ((module) => {
 
 "use strict";
@@ -170,7 +370,7 @@ module.exports = import("react-toastify");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/_app.js"));
+var __webpack_exports__ = (__webpack_exec__(8484));
 module.exports = __webpack_exports__;
 
 })();

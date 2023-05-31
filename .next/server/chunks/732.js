@@ -1,0 +1,1232 @@
+"use strict";
+exports.id = 732;
+exports.ids = [732];
+exports.modules = {
+
+/***/ 3732:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([
+    {
+        id: 1,
+        logo: "/images/resource/hospital-profile/1-1.png",
+        patientName: "Adetunde Funke",
+        patientID: " AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        bedNumber: "F1-W2-B3",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID"
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "in",
+                type: "In Patient"
+            }
+        ],
+        link: "https:// AB/SMH/03.com",
+        tag: "Patient ID ",
+        destination: {
+            min: 0,
+            max: 20
+        },
+        category: "Residential",
+        created_at: "Last Hour",
+        experience: "Fresh",
+        totaltotalCheckup: {
+            min: 0,
+            max: 500
+        },
+        tag: "app"
+    },
+    {
+        id: 2,
+        logo: "/images/resource/hospital-profile/1-2.png",
+        patientName: "Judy June",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        link: "https://www.AB/SMH/03.org",
+        tag: "full-time",
+        destination: {
+            min: 20,
+            max: 30
+        },
+        category: "Commercial",
+        created_at: "Last 24 Hour",
+        experience: "1 Year",
+        totaltotalCheckup: {
+            min: 500,
+            max: 1000
+        },
+        tag: "administrative"
+    },
+    {
+        id: 3,
+        logo: "/images/resource/hospital-profile/1-3.png",
+        patientName: " Falegan Philip",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Layiwola Kunle",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        bedNumber: "F1-W2-B3",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "in",
+                type: "In Patient"
+            }
+        ],
+        link: "https://www.AB/SMH/03app.com",
+        tag: "internship",
+        category: "Industrial",
+        created_at: "Last 7 Days",
+        experience: "2 Year",
+        totaltotalCheckup: {
+            min: 1000,
+            max: 1500
+        },
+        tag: "android"
+    },
+    {
+        id: 4,
+        logo: "/images/resource/hospital-profile/1-4.png",
+        patientName: "Leke Kate",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        link: "https://www.AB/SMH/03.com",
+        tag: "Patient ID ",
+        destination: {
+            min: 30,
+            max: 40
+        },
+        category: "Apartments",
+        created_at: "Last 14 Days",
+        experience: "3 Year",
+        totaltotalCheckup: {
+            min: 1500,
+            max: 2000
+        },
+        tag: "wordpress"
+    },
+    {
+        id: 5,
+        logo: "/images/resource/hospital-profile/1-5.png",
+        patientName: "Sucess Patient",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        bedNumber: "F1-W2-B3",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "in",
+                type: "In Patient"
+            }
+        ],
+        link: "https://AB/SMH/03.com",
+        tag: "full-time",
+        destination: {
+            min: 40,
+            max: 50
+        },
+        category: "Residential",
+        created_at: "Last 30 Days",
+        experience: "4 Year",
+        totaltotalCheckup: {
+            min: 2000,
+            max: 2500
+        },
+        tag: "design"
+    },
+    {
+        id: 6,
+        logo: "/images/resource/hospital-profile/1-6.png",
+        patientName: "Adetunde Funke",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        link: "https://www.AB/SMH/03.com",
+        tag: "internship",
+        destination: {
+            min: 50,
+            max: 60
+        },
+        category: "Commercial",
+        created_at: "Last Hour",
+        experience: "1 Year",
+        totaltotalCheckup: {
+            min: 2500,
+            max: 3000
+        },
+        tag: "react"
+    },
+    {
+        id: 7,
+        logo: "/images/resource/hospital-profile/1-1.png",
+        patientName: "Adetunde Funke",
+        patientID: " AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        bedNumber: "F1-W2-B3",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "in",
+                type: "In Patient"
+            }
+        ],
+        link: "https:// AB/SMH/03.com",
+        tag: "Patient ID ",
+        destination: {
+            min: 60,
+            max: 70
+        },
+        category: "Industrial",
+        created_at: "Last 24 Hour",
+        experience: "2 Year",
+        totaltotalCheckup: {
+            min: 3000,
+            max: 3500
+        },
+        tag: "app"
+    },
+    {
+        id: 8,
+        logo: "/images/resource/hospital-profile/1-2.png",
+        patientName: "Judy June",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            }
+        ],
+        link: "https://www.AB/SMH/03.org",
+        tag: "full-time",
+        destination: {
+            min: 70,
+            max: 80
+        },
+        category: "Apartments",
+        created_at: "Last 7 Days",
+        experience: "3 Year",
+        totaltotalCheckup: {
+            min: 3500,
+            max: 4000
+        },
+        tag: "administrative"
+    },
+    {
+        id: 9,
+        logo: "/images/resource/hospital-profile/1-3.png",
+        patientName: " Falegan Philip",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        link: "https://www.AB/SMH/03app.com",
+        tag: "internship",
+        destination: {
+            min: 80,
+            max: 90
+        },
+        category: "Residential",
+        created_at: "Last 14 Days",
+        experience: "4 Year",
+        totaltotalCheckup: {
+            min: 4000,
+            max: 4500
+        },
+        tag: "android"
+    },
+    {
+        id: 10,
+        logo: "/images/resource/hospital-profile/1-6.png",
+        patientName: "Richard Ike",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            }
+        ],
+        link: "https://www.AB/SMH/03.com",
+        tag: "health",
+        destination: {
+            min: 90,
+            max: 100
+        },
+        category: "Commercial",
+        created_at: "Last 30 Days",
+        experience: "1 Year",
+        totaltotalCheckup: {
+            min: 4500,
+            max: 5000
+        },
+        tag: "wordpress"
+    },
+    {
+        id: 11,
+        logo: "/images/resource/hospital-profile/1-4.png",
+        patientName: "Leke Kate",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            }
+        ],
+        link: "https://www.AB/SMH/03.com",
+        tag: "all",
+        destination: {
+            min: 0,
+            max: 10
+        },
+        category: "Industrial",
+        created_at: "Last Hour",
+        experience: "2 Year",
+        totaltotalCheckup: {
+            min: 5000,
+            max: 5500
+        },
+        tag: "design"
+    },
+    {
+        id: 12,
+        logo: "/images/resource/hospital-profile/2-1.png",
+        patientName: "Richard olu",
+        patientID: " AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        link: "https:// AB/SMH/03.com",
+        tag: "trending",
+        destination: {
+            min: 10,
+            max: 20
+        },
+        category: "Apartments",
+        created_at: "Last 24 Hour",
+        experience: "3 Year",
+        totaltotalCheckup: {
+            min: 5500,
+            max: 6000
+        },
+        tag: "react"
+    },
+    {
+        id: 13,
+        logo: "/images/resource/hospital-profile/2-2.png",
+        patientName: "Judy June",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "in",
+                type: "Patient Gender"
+            }
+        ],
+        link: "https://www.AB/SMH/03.org",
+        tag: "design",
+        destination: {
+            min: 20,
+            max: 30
+        },
+        category: "Residential",
+        created_at: "Last 7 Days",
+        experience: "4 Year",
+        totaltotalCheckup: {
+            min: 6000,
+            max: 6500
+        },
+        tag: "app"
+    },
+    {
+        id: 14,
+        logo: "/images/resource/hospital-profile/2-3.png",
+        patientName: " Falegan Philip",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        link: "https://www.AB/SMH/03app.com",
+        tag: "marketing",
+        destination: {
+            min: 30,
+            max: 40
+        },
+        category: "Commercial",
+        created_at: "Last 14 Days",
+        experience: "1 Year",
+        totaltotalCheckup: {
+            min: 6500,
+            max: 7000
+        },
+        tag: "administrative"
+    },
+    {
+        id: 15,
+        logo: "/images/resource/hospital-profile/2-4.png",
+        patientName: "Leke Kate",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "in",
+                type: "Patient Gender"
+            }
+        ],
+        link: "https://www.AB/SMH/03.com",
+        tag: "health",
+        destination: {
+            min: 40,
+            max: 50
+        },
+        category: "Industrial",
+        created_at: "Last 30 Days",
+        experience: "2 Year",
+        totaltotalCheckup: {
+            min: 7000,
+            max: 7500
+        },
+        tag: "android"
+    },
+    {
+        id: 16,
+        logo: "/images/resource/hospital-profile/2-5.png",
+        patientName: "Ayetoro Kayode",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            }
+        ],
+        link: "https://AB/SMH/03.com",
+        tag: "all",
+        destination: {
+            min: 50,
+            max: 60
+        },
+        category: "Apartments",
+        created_at: "Last Hour",
+        experience: "3 Year",
+        totaltotalCheckup: {
+            min: 7500,
+            max: 8000
+        },
+        tag: "wordpress"
+    },
+    {
+        id: 17,
+        logo: "/images/resource/hospital-profile/2-6.png",
+        patientName: "Adeyileka Catherine",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            }
+        ],
+        tag: "trending",
+        destination: {
+            min: 60,
+            max: 70
+        },
+        category: "Residential",
+        created_at: "Last 24 Hour",
+        experience: "4 Year",
+        totaltotalCheckup: {
+            min: 8000,
+            max: 8500
+        },
+        tag: "design"
+    },
+    {
+        id: 18,
+        logo: "/images/resource/hospital-profile/2-7.png",
+        patientName: "Richard Ike",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "in",
+                type: "Patient Gender"
+            }
+        ],
+        tag: "design",
+        destination: {
+            min: 70,
+            max: 80
+        },
+        category: "Commercial",
+        created_at: "Last 7 Days",
+        experience: "1 Year",
+        totaltotalCheckup: {
+            min: 8500,
+            max: 9000
+        },
+        tag: "react"
+    },
+    {
+        id: 19,
+        logo: "/images/resource/hospital-profile/2-8.png",
+        patientName: "Leke Kate",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            }
+        ],
+        tag: "marketing",
+        destination: {
+            min: 80,
+            max: 90
+        },
+        category: "Industrial",
+        created_at: "Last 14 Days",
+        experience: "2 Year",
+        totaltotalCheckup: {
+            min: 9000,
+            max: 9500
+        },
+        tag: "app"
+    },
+    {
+        id: 20,
+        logo: "/images/resource/hospital-profile/2-9.png",
+        patientName: "Adebayo Adetutu",
+        patientID: "AB/SMH/03",
+        Doctor: "Dr. Ade Ojo",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            }
+        ],
+        link: "https://www.AB/SMH/03.com",
+        tag: "health",
+        destination: {
+            min: 90,
+            max: 100
+        },
+        category: "Apartments",
+        created_at: "Last 30 Days",
+        experience: "3 Year",
+        totaltotalCheckup: {
+            min: 10000,
+            max: 10500
+        },
+        tag: "administrative"
+    },
+    // for home 5 job featured
+    {
+        id: 21,
+        logo: "/images/resource/hospital-profile/3-1.png",
+        patientName: "Adetunde Funke",
+        Doctor: "Dr. Ade Ojo",
+        patientID: " AB/SMH/03",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        link: "https:// AB/SMH/03.com",
+        tag: "all",
+        destination: {
+            min: 0,
+            max: 10
+        },
+        category: "Residential",
+        created_at: "Last Hour",
+        experience: "4 Year",
+        totaltotalCheckup: {
+            min: 10500,
+            max: 11000
+        },
+        tag: "android"
+    },
+    {
+        id: 22,
+        logo: "/images/resource/hospital-profile/3-2.png",
+        patientName: "Adetunde Funke",
+        Doctor: "Dr. Ade Ojo",
+        patientID: "AB/SMH/03",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "in",
+                type: "Patient Gender"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        link: "https://www.AB/SMH/03.org",
+        tag: "trending",
+        destination: {
+            min: 10,
+            max: 20
+        },
+        category: "Commercial",
+        created_at: "Last 7 Days",
+        experience: "1 Year",
+        totaltotalCheckup: {
+            min: 11500,
+            max: 12000
+        },
+        tag: "wordpress"
+    },
+    {
+        id: 23,
+        logo: "/images/resource/hospital-profile/3-3.png",
+        patientName: "Lead Richard olu",
+        Doctor: "Dr. Ade Ojo",
+        patientID: "AB/SMH/03",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        link: "https://www.AB/SMH/03app.com",
+        tag: "design",
+        destination: {
+            min: 20,
+            max: 30
+        },
+        category: "Industrial",
+        created_at: "Last 14 Days",
+        experience: "2 Year",
+        totaltotalCheckup: {
+            min: 12000,
+            max: 12500
+        },
+        tag: "design"
+    },
+    {
+        id: 24,
+        logo: "/images/resource/hospital-profile/3-4.png",
+        patientName: "Adetunde Funke",
+        Doctor: "Dr. Ade Ojo",
+        patientID: "AB/SMH/03",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "in",
+                type: "Patient Gender"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        link: "https://www.AB/SMH/03.com",
+        tag: "marketing",
+        destination: {
+            min: 30,
+            max: 40
+        },
+        category: "Apartments",
+        created_at: "Last 30 Days",
+        experience: "3 Year",
+        totaltotalCheckup: {
+            min: 12500,
+            max: 13000
+        },
+        tag: "react"
+    },
+    {
+        id: 25,
+        logo: "/images/resource/hospital-profile/3-5.png",
+        patientName: "Siniour Richard Ike",
+        Doctor: "Dr. Ade Ojo",
+        patientID: "AB/SMH/03",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        link: "https://AB/SMH/03.com",
+        tag: "health",
+        destination: {
+            min: 40,
+            max: 50
+        },
+        category: "Residential",
+        created_at: "Last Hour",
+        experience: "4 Year",
+        totaltotalCheckup: {
+            min: 13000,
+            max: 13500
+        },
+        tag: "app"
+    },
+    {
+        id: 26,
+        logo: "/images/resource/hospital-profile/3-6.png",
+        patientName: "Adebayo Adetutu",
+        Doctor: "Dr. Ade Ojo",
+        patientID: "AB/SMH/03",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "in",
+                type: "Patient Gender"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        link: "https://www.AB/SMH/03.com",
+        destination: {
+            min: 50,
+            max: 60
+        },
+        category: "Commercial",
+        created_at: "Last 24 Hour",
+        experience: "1 Year",
+        totaltotalCheckup: {
+            min: 13500,
+            max: 14000
+        },
+        tag: "administrative"
+    },
+    {
+        id: 27,
+        logo: "/images/resource/hospital-profile/3-7.png",
+        patientName: "Adetunde Funke",
+        Doctor: "Dr. Ade Ojo",
+        patientID: "Spectrap",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        tag: "all",
+        destination: {
+            min: 60,
+            max: 70
+        },
+        category: "Industrial",
+        created_at: "Last 7 Days",
+        experience: "2 Year",
+        totaltotalCheckup: {
+            min: 14000,
+            max: 14500
+        },
+        tag: "android"
+    },
+    {
+        id: 28,
+        logo: "/images/resource/hospital-profile/3-8.png",
+        patientName: "Adebayo Adetutu",
+        Doctor: "Dr. Ade Ojo",
+        patientID: "Dropbox",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "in",
+                type: "Patient Gender"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        tag: "trending",
+        destination: {
+            min: 70,
+            max: 80
+        },
+        category: "Apartments",
+        created_at: "Last 14 Days",
+        experience: "3 Year",
+        totaltotalCheckup: {
+            min: 14500,
+            max: 15000
+        },
+        tag: "wordpress"
+    },
+    {
+        id: 29,
+        logo: "/images/resource/hospital-profile/3-1.png",
+        patientName: "Adetunde Funke",
+        Doctor: "Dr. Ade Ojo",
+        patientID: " AB/SMH/03",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "in",
+                type: "Patient Gender"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        link: "https:// AB/SMH/03.com",
+        tag: "design",
+        destination: {
+            min: 80,
+            max: 90
+        },
+        category: "Residential",
+        created_at: "Last 30 Days",
+        experience: "4 Year",
+        totaltotalCheckup: {
+            min: 15000,
+            max: 15500
+        },
+        tag: "design"
+    },
+    {
+        id: 30,
+        logo: "/images/resource/hospital-profile/3-2.png",
+        patientName: "Adetunde Funke",
+        Doctor: "Dr. Ade Ojo",
+        patientID: "AB/SMH/03",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        link: "https://www.AB/SMH/03.org",
+        tag: "marketing",
+        destination: {
+            min: 90,
+            max: 100
+        },
+        category: "Residential",
+        created_at: "Last Hour",
+        experience: "1 Year",
+        totaltotalCheckup: {
+            min: 15500,
+            max: 16000
+        },
+        tag: "react"
+    },
+    {
+        id: 31,
+        logo: "/images/resource/hospital-profile/3-3.png",
+        patientName: "Lead Richard olu",
+        Doctor: "Dr. Ade Ojo",
+        patientID: "AB/SMH/03",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "in",
+                type: "Patient Gender"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        link: "https://www.AB/SMH/03app.com",
+        tag: "health",
+        destination: {
+            min: 0,
+            max: 10
+        },
+        category: "Commercial",
+        created_at: "Last 24 Hour",
+        experience: "2 Year",
+        totaltotalCheckup: {
+            min: 16000,
+            max: 16500
+        },
+        tag: "app"
+    },
+    {
+        id: 32,
+        logo: "/images/resource/hospital-profile/3-4.png",
+        patientName: "Adetunde Funke",
+        Doctor: "Dr. Ade Ojo",
+        patientID: "AB/SMH/03",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "out",
+                type: "Out Patient"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        link: "https://www.AB/SMH/03.com",
+        tag: "all",
+        destination: {
+            min: 10,
+            max: 20
+        },
+        category: "Industrial",
+        created_at: "Last 7 Days",
+        experience: "3 Year",
+        totaltotalCheckup: {
+            min: 16500,
+            max: 17000
+        },
+        tag: "administrative"
+    },
+    {
+        id: 33,
+        logo: "/images/resource/hospital-profile/3-5.png",
+        patientName: "Siniour Richard Ike",
+        Doctor: "Dr. Ade Ojo",
+        patientID: "AB/SMH/03",
+        lastVisit: "12th June, 2022.",
+        totalCheckup: "19",
+        patientData: [
+            {
+                styleClass: "id",
+                type: "Patient ID "
+            },
+            {
+                styleClass: "gender",
+                type: "Patient Gender"
+            },
+            {
+                styleClass: "in",
+                type: "In Patient"
+            }
+        ],
+        jobTag: [
+            "App",
+            "Design",
+            "Digital"
+        ],
+        link: "https://AB/SMH/03.com",
+        tag: "trending",
+        destination: {
+            min: 20,
+            max: 30
+        }
+    }
+]);
+
+
+/***/ })
+
+};
+;
